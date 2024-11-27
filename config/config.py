@@ -5,5 +5,5 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    GITHUB_API_URL = os.getenv('GITHUB_API_URL', 'https://api.github.com')
+    GITHUB_API_URL = os.getenv('GITHUB_API_URL')
     GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
