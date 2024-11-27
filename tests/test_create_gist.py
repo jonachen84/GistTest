@@ -46,7 +46,7 @@ class TestGistCreation:
         self.__class__.created_gists.append(gist_id)
 
 # Clean up created gists
-    # @classmethod
+    @classmethod
     def teardown_class(cls):
 
         for gist_id in cls.created_gists:
