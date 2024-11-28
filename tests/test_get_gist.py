@@ -7,7 +7,7 @@ class TestGistRetrieval:
         cls.gist_client = GistClient()
         cls.created_gists = []
 
-# Create a public gist to retrieve
+# Create a public gist
         description_public = "Public Gist for Retrieval Test"
         files_public = {
             "retrieve_public_test.txt": {
@@ -18,7 +18,7 @@ class TestGistRetrieval:
         cls.public_gist_id = response_public.json()['id']
         cls.created_gists.append(cls.public_gist_id)
 
-# Create a private gist to retrieve
+# Create a private gist
         description_private = "Private Gist for Retrieval Test"
         files_private = {
             "retrieve_private_test.txt": {
